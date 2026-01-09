@@ -1,0 +1,189 @@
+.projects-list-container {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.projects-header {
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 1rem;
+}
+
+.projects-header h2 {
+  color: #333;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.projects-count {
+  color: #666;
+  margin: 0.5rem 0 0 0;
+  font-size: 0.95rem;
+}
+
+.projects-table-wrapper {
+  overflow-x: auto;
+}
+
+.projects-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.projects-table thead {
+  background-color: #f9f9f9;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.projects-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.projects-table tbody tr {
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s ease;
+}
+
+.projects-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.projects-table td {
+  padding: 1.25rem 1rem;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.student-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.student-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.student-email {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+.project-title {
+  font-weight: 500;
+  color: #333;
+  max-width: 200px;
+}
+
+.submitted-date {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.proposal-badge {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-badge.proposal_pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-badge.approved {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-badge.revision_needed {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.status-badge.completed {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.view-btn {
+  padding: 0.5rem 1rem;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.view-btn:hover {
+  background-color: #535bf2;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(100, 108, 255, 0.3);
+}
+
+.status-pending {
+  background-color: rgba(255, 193, 7, 0.05);
+}
+
+.status-approved {
+  background-color: rgba(76, 175, 80, 0.05);
+}
+
+.status-revision {
+  background-color: rgba(244, 67, 54, 0.05);
+}
+
+.status-completed {
+  background-color: rgba(33, 150, 243, 0.05);
+}
+
+@media (max-width: 768px) {
+  .projects-list-container {
+    padding: 1rem;
+  }
+
+  .projects-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .projects-table {
+    font-size: 0.85rem;
+  }
+
+  .projects-table th,
+  .projects-table td {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .project-title {
+    max-width: 100px;
+  }
+
+  .view-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}

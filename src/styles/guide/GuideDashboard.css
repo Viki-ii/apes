@@ -1,0 +1,170 @@
+.guide-dashboard-container {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-header {
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 1.5rem;
+}
+
+.dashboard-header h1 {
+  color: #333;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.subtitle {
+  color: #666;
+  margin: 0.5rem 0 0 0;
+  font-size: 1rem;
+}
+
+.tabs-container {
+  margin-bottom: 2rem;
+}
+
+.tabs-header {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.tab-button {
+  padding: 1rem 1.5rem;
+  background: none;
+  border: none;
+  color: #666;
+  font-weight: 500;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  position: relative;
+  bottom: -2px;
+}
+
+.tab-icon {
+  font-size: 1.2rem;
+}
+
+.tab-button:hover {
+  color: #333;
+  background-color: rgba(100, 108, 255, 0.05);
+}
+
+.tab-button.active {
+  color: #646cff;
+  border-bottom-color: #646cff;
+  font-weight: 600;
+}
+
+.tabs-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 0 0 8px 8px;
+  margin-top: -1px;
+}
+
+.back-button {
+  padding: 0.5rem 1rem;
+  background-color: #e3f2fd;
+  color: #1976d2;
+  border: 1px solid #90caf9;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.back-button:hover {
+  background-color: #bbdefb;
+  border-color: #64b5f6;
+}
+
+.current-project {
+  flex: 1;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.project-info {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.project-info strong {
+  color: #646cff;
+  font-weight: 600;
+}
+
+.tabs-content {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .guide-dashboard-container {
+    padding: 1rem;
+  }
+
+  .dashboard-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .tabs-header {
+    gap: 0;
+  }
+
+  .tab-button {
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .tab-icon {
+    display: none;
+  }
+
+  .tabs-breadcrumb {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .current-project {
+    width: 100%;
+  }
+
+  .project-info {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}

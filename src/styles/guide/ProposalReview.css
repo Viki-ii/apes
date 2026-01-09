@@ -1,0 +1,239 @@
+.proposal-review-container {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.review-header {
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 1.5rem;
+}
+
+.review-header h2 {
+  color: #333;
+  margin: 0 0 1rem 0;
+  font-size: 1.8rem;
+}
+
+.student-details {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.student-details p {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.proposal-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.proposal-section,
+.review-section {
+  padding: 1.5rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.proposal-section h3,
+.review-section h3 {
+  color: #333;
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+}
+
+.proposal-text {
+  color: #666;
+  line-height: 1.6;
+}
+
+.proposal-text p {
+  margin: 0 0 1rem 0;
+}
+
+.proposal-text h4 {
+  color: #333;
+  margin: 1.5rem 0 0.75rem 0;
+  font-size: 1rem;
+}
+
+.proposal-text ul {
+  margin: 0 0 1rem 1.5rem;
+  padding: 0;
+  color: #666;
+}
+
+.proposal-text li {
+  margin-bottom: 0.5rem;
+}
+
+.review-decision {
+  margin-bottom: 1.5rem;
+}
+
+.review-decision > label {
+  display: block;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.decision-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+
+.radio-option input[type="radio"] {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+.decision-label {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.decision-label.approved {
+  color: #155724;
+  background-color: #d4edda;
+}
+
+.decision-label.revision {
+  color: #856404;
+  background-color: #fff3cd;
+}
+
+.decision-label.rejected {
+  color: #721c24;
+  background-color: #f8d7da;
+}
+
+.review-comments {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.review-comments label {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.review-comments textarea {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  resize: vertical;
+  min-height: 120px;
+}
+
+.review-comments textarea:focus {
+  outline: none;
+  border-color: #646cff;
+  box-shadow: 0 0 0 3px rgba(100, 108, 255, 0.1);
+}
+
+.char-count {
+  font-size: 0.85rem;
+  color: #999;
+  margin-top: 0.5rem;
+}
+
+.review-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #646cff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #535bf2;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(100, 108, 255, 0.3);
+}
+
+.btn-secondary {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.btn-secondary:hover {
+  background-color: #e8e8e8;
+}
+
+.evaluation-preview {
+  background: #e3f2fd;
+  border-left: 4px solid #2196f3;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+.info-note {
+  color: #1976d2;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .proposal-content {
+    grid-template-columns: 1fr;
+  }
+
+  .student-details {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .review-actions {
+    flex-direction: column;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+  }
+}

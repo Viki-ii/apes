@@ -1,0 +1,44 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.counter-section {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.counter-section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.counter-section p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #646cff;
+}
+
+.counter-section button {
+  padding: 0.8em 1.6em;
+  font-size: 1.1em;
+  background-color: #646cff;
+  color: white;
+  border: none;
+}
+
+.counter-section button:hover {
+  background-color: #535bf2;
+}
