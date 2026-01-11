@@ -9,10 +9,107 @@
   flex-direction: column;
 }
 
+/* Student Sidebar Specifics */
+.sidebar.student-sidebar {
+  background: linear-gradient(180deg, #646cff 0%, #7b83ff 100%);
+  width: 280px; /* Slightly wider as per design */
+  border-right: none;
+  border-radius: 0 30px 30px 0; /* Rounded corners on the right */
+  margin: 20px 0 20px 20px; /* Floating sidebar look */
+  height: calc(100vh - 40px); /* Adjust for margins */
+  box-shadow: 0 10px 30px rgba(100, 108, 255, 0.3);
+}
+
+.student-sidebar .sidebar-header {
+  background: transparent;
+  border-bottom: none;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.project-hub-branding .ph-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  color: white;
+  letter-spacing: -0.5px;
+}
+
+.project-hub-branding .ph-title span {
+  font-weight: 300;
+}
+
+.project-hub-branding .ph-subtitle {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin: 0;
+  margin-top: -5px;
+  font-weight: 500;
+}
+
+.student-sidebar .nav-link {
+  color: rgba(255, 255, 255, 0.9);
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.25rem 1rem;
+  border-radius: 12px;
+}
+
+.student-sidebar .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding-left: 1.5rem; /* No indent shift for this design */
+}
+
+.student-sidebar .nav-link.active {
+  background-color: white;
+  color: #646cff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.student-sidebar .nav-icon {
+  font-size: 1.1rem;
+  margin-right: 0.5rem;
+}
+
+.student-sidebar .nav-arrow {
+  margin-left: auto;
+  font-size: 0.6rem;
+  opacity: 0.7;
+}
+
+.logout-wrapper {
+  padding: 1.5rem;
+  margin-top: auto;
+}
+
+.ph-logout-btn {
+  width: 100%;
+  background: white;
+  color: #333;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ph-logout-btn:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Original Sidebar Styles (Keep for non-student) */
 .sidebar-header {
   padding: 1.5rem 1rem;
   border-bottom: 1px solid #444;
   background-color: #242424;
+}
+
+.student-sidebar .sidebar-header {
+    background-color: transparent !important;
 }
 
 .user-role-badge {
@@ -60,11 +157,18 @@
   margin-bottom: 1rem;
 }
 
+.student-sidebar .nav-section {
+    margin-bottom: 0;
+}
+
 .nav-section:last-child {
   margin-bottom: 0;
   margin-top: auto;
   padding-top: 1rem;
-  border-top: 1px solid #444;
+}
+
+.student-sidebar .nav-section:last-child {
+    border-top: none;
 }
 
 .nav-footer {
@@ -151,6 +255,15 @@
     max-height: 80px;
     overflow-x: auto;
     overflow-y: hidden;
+  }
+  
+  .sidebar.student-sidebar {
+      width: 100%;
+      height: auto;
+      margin: 0;
+      border-radius: 0;
+      flex-direction: row;
+      max-height: 80px;
   }
 
   .sidebar-header {
