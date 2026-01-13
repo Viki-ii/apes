@@ -1,4 +1,4 @@
-# React + Vite Application
+# React + Vite Application!
 
 A modern React application built with Vite for blazing fast development and optimal build performance.
 
